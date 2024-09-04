@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+#second h1 {
+    font-size: 30px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+#second p {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 400;
+    width: 500px;
+}
+
+#second .btn {
+    text-align: left;
+    padding-top: 20px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.icons {
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+i {
+    color: white;
+    padding-right: 15px;
+}
+
+i:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 1407px) and (min-width:900px) {
+    p {
+        width: 450px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #first img {
+        width: 400px;
+    }
+}
+
+@media (max-width:899px) {
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+    #first img {
+        width: 320px;
+    }
+
+    #second .btn {
+        text-align: center;
+    }
+
+    #second p {
+        padding-left: 30px;
+        text-align: center;
+        font-size: 12px;
+        width: 290px;
+    }
+
+    #second h1 {
+        font-size: 25px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+}
